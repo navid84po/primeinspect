@@ -6,91 +6,65 @@
   <title>Prime Inspect | بازرسی جرثقیل و دیگ بخار — by EuroBoiler</title>
   <meta name="description" content="بازرسی تخصصی جرثقیل، دیگ بخار و تجهیزات تحت فشار با دقت بالا، صدور سریع و تعرفه رقابتی. پاسخگویی 24/7. Prime Inspect — زیرمجموعه EuroBoiler." />
   <meta name="theme-color" content="#0F2F59" />
-
-  <!-- Canonical + OG/Twitter -->
   <link rel="canonical" href="https://navid84po.github.io/primeinspect/">
   <meta property="og:title" content="Prime Inspect — بازرسی جرثقیل و دیگ بخار">
   <meta property="og:description" content="بازرسی جرثقیل، دیگ بخار و تجهیزات تحت فشار — دقیق، سریع، به‌صرفه. پاسخگویی 24/7.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://navid84po.github.io/primeinspect/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon (SVG data URI) -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop">
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M24 4l14 6v9c0 10.5-6.5 20-14 23-7.5-3-14-12.5-14-23V10l14-6z' fill='%23fff' stroke='%230F2F59' stroke-width='2'/%3E%3Cpath d='M17 24l5 5 9-10' stroke='%2310B981' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-
-  <!-- Font -->
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%2393C5FD'/%3E%3Cstop offset='1' stop-color='%230F2F59'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M24 4l14 6v9c0 10.5-6.5 20-14 23-7.5-3-14-12.5-14-23V10l14-6z' stroke='url(%23g)' stroke-width='2.4' fill='%23EEF6FF'/%3E%3Cpath d='M17 24l5 5 9-10' stroke='%2310B981' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Preload hero image -->
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop" imagesrcset="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop 1200w" imagesizes="(max-width:900px) 90vw, 42vw">
 
   <style>
     :root{
       --primary:#0F2F59; --accent:#10B981; --text:#111827; --muted:#6B7280;
-      --bg:#F7FAFC; --card:#FFFFFF; --ring:#DBEAFE; --ease:cubic-bezier(.22,1,.36,1);
+      --bg:#0B1220; --bg2:#0E2439; --card:#FFFFFF; --ring:#DBEAFE;
+      --ease:cubic-bezier(.2,.8,.2,1);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Vazirmatn",system-ui,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1000px 600px at 10% -10%, rgba(37,99,235,.18), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(16,185,129,.14), transparent 60%),
+      linear-gradient(180deg,var(--bg),var(--bg2));
+      color:var(--text);font-family:"Vazirmatn",system-ui,Segoe UI,Roboto,Arial,sans-serif;scroll-behavior:smooth}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
     .container{max-width:1200px;margin:0 auto;padding:0 20px}
-    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:.9rem;font-weight:700;border:2px solid transparent;transition:.2s var(--ease)}
-    .btn-primary{background:var(--primary);color:#fff}
-    .btn-primary:hover{filter:brightness(1.05);transform:translateY(-2px)}
-    .btn-outline{border-color:var(--primary);color:var(--primary);background:#fff}
-    .btn-outline:hover{background:#EEF2FF}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:.9rem;font-weight:700;border:2px solid transparent;transition:.24s var(--ease)}
+    .btn-primary{background:var(--primary);color:#fff}.btn-primary:hover{filter:brightness(1.05);transform:translateY(-2px)}
+    .btn-outline{border-color:var(--primary);color:var(--primary);background:#fff}.btn-outline:hover{background:#EEF2FF}
     .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;border-radius:999px;background:#E0F2FE;color:#075985;font-size:.85rem}
+    .chip{background:#fff;border:1px solid #E5E7EB;border-radius:.8rem;padding:.5rem .7rem;color:#374151}
     .card{background:#fff;border:1px solid #E5E7EB;border-radius:1rem;box-shadow:0 10px 30px rgba(15,23,42,.06)}
-
     /* Header */
-    header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #EEF2F7;z-index:50;transition:.3s}
+    header{position:sticky;top:0;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #EEF2F7;z-index:50;transition:.3s}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0;transition:.3s}
     .brand{display:flex;align-items:center;gap:.7rem}
-    .brand-title{line-height:1}
-    .brand-title .en{font-weight:800}
+    .brand-title{line-height:1}.brand-title .en{font-weight:800}
     nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}
-    nav a{color:#0F172A;font-weight:600}
-    nav a:hover{color:var(--primary)}
-    .cta-inline{display:none}
-    @media(min-width:900px){.cta-inline{display:flex}}
-    /* shrink */
-    header.shrink .nav{padding:.4rem 0}
-    header.shrink{box-shadow:0 8px 24px rgba(15,23,42,.06);backdrop-filter:saturate(180%) blur(12px)}
-
+    nav a{color:#0F172A;font-weight:600} nav a:hover{color:var(--primary)}
+    .cta-inline{display:none}@media(min-width:900px){.cta-inline{display:flex}}
+    header.shrink .nav{padding:.4rem 0} header.shrink{box-shadow:0 8px 24px rgba(15,23,42,.18)}
     /* Hero */
-    .hero{position:relative;overflow:hidden}
-    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:3rem 0}
-    .hero h1{margin:.6rem 0 1rem;font-size:2rem;line-height:1.45}
-    .hero h1 .en{font-weight:800;font-size:2.1rem;color:var(--primary)}
-    .hero p{color:var(--muted)}
-    .hero-cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:3.2rem 0}
+    .hero h1{margin:.6rem 0 1rem;font-size:2rem;line-height:1.45;color:#F8FAFC}
+    .hero h1 .en{font-weight:800;font-size:2.1rem;color:#93C5FD}
+    .hero p{color:#D1D5DB} .hero-cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
     .kp{display:flex;gap:.6rem;margin-top:1.2rem;flex-wrap:wrap}
-    .kp .chip{background:#fff;border:1px solid #E5E7EB;border-radius:.8rem;padding:.5rem .7rem;color:#374151}
-    .blob{position:absolute;right:-120px;top:-120px;width:520px;height:520px;background:radial-gradient(circle at 30% 30%, #93C5FD 0, rgba(147,197,253,.55) 35%, rgba(15,47,89,.24) 60%, transparent 70%);filter:blur(10px);z-index:-1;border-radius:50%}
-
-    /* Sticky showcase */
-    .showcase{position:relative;background:linear-gradient(180deg,#F8FAFC,#FFFFFF)}
-    .sticky-wrap{display:grid;gap:1.2rem}
-    @media(min-width:980px){.sticky-wrap{grid-template-columns:1fr 1fr}}
-    .sticky-media{position:relative;height:340px}
-    @media(min-width:980px){.sticky-media{position:sticky;top:84px;height:70vh}}
+    .blob{position:absolute;inset:auto;right:-120px;top:-120px;width:520px;height:520px;background:radial-gradient(circle at 30% 30%, rgba(147,197,253,.5) 0, rgba(37,99,235,.2) 50%, transparent 70%);filter:blur(10px);z-index:-1;border-radius:50%}
+    /* Showcase */
+    .showcase{position:relative;background:linear-gradient(180deg,transparent,rgba(255,255,255,.04))}
+    .sticky-wrap{display:grid;gap:1.2rem}@media(min-width:980px){.sticky-wrap{grid-template-columns:1fr 1fr}}
+    .sticky-media{position:relative;height:340px}@media(min-width:980px){.sticky-media{position:sticky;top:84px;height:70vh}}
     .sticky-media .stack{position:absolute;inset:0;border-radius:1rem;overflow:hidden}
-    .stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s var(--ease), transform .6s var(--ease)}
+    .stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s var(--ease), transform .9s var(--ease);will-change:opacity,transform;transform:translateZ(0)}
     .stack img.active{opacity:1;transform:scale(1.02)}
-    .show-steps{display:grid;gap:1rem}
     .show-step{background:#fff;border:1px solid #E5E7EB;border-radius:.9rem;padding:1rem;transition:transform .3s, box-shadow .3s}
     .show-step.active{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.06)}
-
     /* Sections */
-    section{padding:3rem 0}
-    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.1rem}
-    .grid{display:grid;gap:1rem}
-    @media(min-width:700px){.grid-3{grid-template-columns:repeat(3,1fr)}}
-    @media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr)}}
-
-    /* Services: accordion */
+    section{padding:3rem 0}.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.1rem;color:#F8FAFC}
+    .grid{display:grid;gap:1rem}@media(min-width:700px){.grid-3{grid-template-columns:repeat(3,1fr)}}@media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+    /* Services accordion */
     .service{padding:1rem}
     .acc{border:1px solid #E5E7EB;border-radius:.9rem;overflow:hidden;background:#fff}
     .acc-head{display:flex;align-items:center;justify-content:space-between;padding:1rem;cursor:pointer;outline:0}
@@ -98,55 +72,45 @@
     .acc-head .ic{width:40px;height:40px;border-radius:.8rem;background:#EEF2FF;color:#1F2A44;display:flex;align-items:center;justify-content:center}
     .acc-panel{max-height:0;overflow:hidden;transition:max-height .45s var(--ease),opacity .3s var(--ease);opacity:.6;padding:0 1rem}
     .acc.open .acc-panel{opacity:1;padding:0 1rem 1rem}
-    .acc-arrow{transition:transform .35s var(--ease)}
-    .acc.open .acc-arrow{transform:rotate(-180deg)}
-
+    .acc-arrow{transition:transform .35s var(--ease)}.acc.open .acc-arrow{transform:rotate(-180deg)}
     /* Gallery */
-    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-    @media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr)}}
-    .gallery img{border-radius:.8rem;border:1px solid #E5E7EB;transition:transform .35s var(--ease), box-shadow .35s var(--ease)}
+    .gallery{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr)}}
+    .gallery img{border-radius:.8rem;border:1px solid #E5E7EB;transition:transform .35s var(--ease), box-shadow .35s var(--ease);will-change:transform}
     .gallery img:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
     .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:80}
-    .lightbox.open{display:flex}
-    .lightbox img{max-width:95vw;max-height:85vh;border-radius:12px}
+    .lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:85vh;border-radius:12px}
     .lightbox .close{position:absolute;top:16px;left:16px;width:40px;height:40px;border-radius:999px;border:0;background:#111827;color:#fff;cursor:pointer}
-
     /* Why/Steps */
     .why .item{display:flex;gap:.8rem;padding:1rem;border:1px dashed #E5E7EB;border-radius:.9rem;background:#fff}
     .why .item .ic{width:36px;height:36px;border-radius:.6rem;background:#ECFDF5;color:#065F46;display:flex;align-items:center;justify-content:center}
-    .steps{display:grid;gap:.8rem}
-    @media(min-width:800px){.steps{grid-template-columns:repeat(4,1fr)}}
-    .step{padding:1rem}
+    .steps{display:grid;gap:.8rem}@media(min-width:800px){.steps{grid-template-columns:repeat(4,1fr)}}.step{padding:1rem}
     .step .num{width:32px;height:32px;background:#DBEAFE;color:#1E40AF;border-radius:.6rem;display:flex;align-items:center;justify-content:center;font-weight:700}
-
     /* Form */
-    .form-wrap{display:grid;gap:1rem}
-    @media(min-width:900px){.form-wrap{grid-template-columns:1.1fr .9fr}}
-    form{display:grid;gap:.8rem}
-    label{font-weight:600;font-size:.97rem}
+    .form-wrap{display:grid;gap:1rem}@media(min-width:900px){.form-wrap{grid-template-columns:1.1fr .9fr}}
+    form{display:grid;gap:.8rem}label{font-weight:600;font-size:.97rem}
     input,select,textarea{width:100%;padding:.8rem .9rem;border:1px solid #E5E7EB;border-radius:.7rem;background:#fff}
     input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-color:#93C5FD}
     .note{background:#FFFBEB;border:1px solid #FDE68A;color:#92400E;border-radius:.7rem;padding:.7rem .9rem}
     .success{background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46;border-radius:.7rem;padding:.7rem .9rem;display:none}
-
-    /* Footer + CTA */
-    footer{background:#0B1220;color:#D1D5DB;margin-top:2rem}
-    .foot{display:grid;gap:1rem;padding:2rem 0}
-    @media(min-width:800px){.foot{grid-template-columns:2fr 1fr 1fr}}
-    .subfoot{border-top:1px solid rgba(255,255,255,.08);padding:1rem 0;color:#9CA3AF;font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-
-    /* Floating (moved to right) */
+    /* Footer */
+    footer{background:rgba(255,255,255,.06);color:#E5E7EB;margin-top:2rem}
+    .foot{display:grid;gap:1rem;padding:2rem 0}@media(min-width:800px){.foot{grid-template-columns:2fr 1fr 1fr}}
+    .subfoot{border-top:1px solid rgba(255,255,255,.1);padding:1rem 0;color:#9CA3AF;font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    /* Floating (right) */
     .floating{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:.6rem;z-index:90}
     .fab{width:54px;height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 10px 20px rgba(0,0,0,.12)}
-    .fab.whatsapp{background:#22C55E}
-    .fab.phone{background:var(--primary)}
-
-    /* Reveal */
-    [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease), transform .7s var(--ease)}
-    [data-reveal].in{opacity:1;transform:none}
-    @media (prefers-reduced-motion: reduce){
-      [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}
-    }
+    .fab.whatsapp{background:#22C55E}.fab.phone{background:var(--primary)}
+    /* Reveal (soft) */
+    [data-reveal]{opacity:0;transform:translateY(14px) translateZ(0);filter:blur(6px);transition:opacity .9s var(--ease), transform .9s var(--ease), filter .9s var(--ease);will-change:opacity,transform,filter}
+    [data-reveal].in{opacity:1;transform:none;filter:blur(0)}
+    .stagger > *{opacity:0;transform:translateY(12px) translateZ(0);transition:opacity .9s var(--ease), transform .9s var(--ease)}
+    .stagger.in > *{opacity:1;transform:none}
+    .stagger.in > *:nth-child(1){transition-delay:.05s}
+    .stagger.in > *:nth-child(2){transition-delay:.12s}
+    .stagger.in > *:nth-child(3){transition-delay:.18s}
+    .stagger.in > *:nth-child(4){transition-delay:.24s}
+    .stagger.in > *:nth-child(5){transition-delay:.30s}
+    @media (prefers-reduced-motion: reduce){[data-reveal],.stagger > *{opacity:1!important;transform:none!important;transition:none!important}}
     @media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
   </style>
 </head>
@@ -155,15 +119,20 @@
   <header id="hdr">
     <div class="container nav">
       <a href="#" class="brand" aria-label="Prime Inspect — by EuroBoiler">
-        <!-- Logo SVG -->
-        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" width="40" height="40">
-          <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#93C5FD"/><stop offset="1" stop-color="#0F2F59"/></linearGradient></defs>
-        <path d="M24 4l14 6v9c0 10.5-6.5 20-14 23-7.5-3-14-12.5-14-23V10l14-6z" stroke="url(#g1)" stroke-width="2.4" fill="rgba(147,197,253,.12)"/>
-        <path d="M17 24l5 5 9-10" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- لوگوی اختصاصی (SVG داخلی) -->
+        <svg viewBox="0 0 64 64" width="40" height="40" fill="none" aria-hidden="true">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#93C5FD"/><stop offset="1" stop-color="#0F2F59"/></linearGradient></defs>
+          <path d="M32 6l20 8v12c0 14-9.2 26.6-20 31-10.8-4.4-20-17-20-31V14l20-8z" stroke="url(#lg)" stroke-width="2.6" fill="rgba(147,197,253,.12)"/>
+          <!-- P -->
+          <path d="M22 24h8c3.5 0 5.5 2 5.5 5s-2 5-5.5 5h-4v6h-4v-16z" fill="#2563EB"/>
+          <!-- I -->
+          <rect x="38.5" y="24" width="4" height="16" rx="1.3" fill="#10B981"/>
+          <!-- check -->
+          <path d="M22 32l6 6 12-14" stroke="#10B981" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="brand-title">
           <div class="en">Prime Inspect</div>
-          <div class="sub">by EuroBoiler • دقیق، سریع، به‌صرفه</div>
+          <div class="sub">by EuroBoiler</div>
         </div>
       </a>
       <nav aria-label="منوی اصلی">
@@ -174,7 +143,7 @@
           <li><a href="#why">مزیت‌ها</a></li>
           <li><a href="#process">فرآیند</a></li>
           <li><a href="#request">درخواست</a></li>
-          <li class="cta-inline"><a class="btn btn-primary" href="tel:+989219692100" aria-label="تماس فوری">تماس فوری</a></li>
+          <li class="cta-inline"><a class="btn btn-primary" href="tel:+989219692100">تماس فوری</a></li>
         </ul>
       </nav>
     </div>
@@ -183,13 +152,10 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container wrap">
-      <div data-reveal>
+      <div class="stagger" data-reveal>
         <span class="badge">پاسخگویی 24/7</span>
-        <h1>
-          <span class="en">Prime Inspect</span> — زیرمجموعه EuroBoiler
-          <br/>بازرسی جرثقیل، دیگ بخار و تجهیزات تحت فشار
-        </h1>
-        <p>بازرسی تخصصی انواع جرثقیل (کامیونی، تاوری، سقفی/دروازه‌ای)، دیگ بخار و مخازن تحت فشار، تست بار، NDT و آموزش ایمنی با گواهینامه. رزرو آسان و صدور سریع گواهی.</p>
+        <h1><span class="en">Prime Inspect</span> — زیرمجموعه EuroBoiler<br/>بازرسی جرثقیل، دیگ بخار و تجهیزات تحت فشار</h1>
+        <p>بازرسی تخصصی انواع جرثقیل (کامیونی، تاوری، سقفی/دروازه‌ای)، دیگ بخار و مخازن تحت فشار، تست بار، NDT و آموزش ایمنی با گواهینامه.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#request">درخواست بازرسی</a>
           <a class="btn btn-outline" href="tel:+989219692100">تماس فوری: 0921 969 2100</a>
@@ -202,11 +168,10 @@
       </div>
       <div data-reveal>
         <div class="blob" aria-hidden="true"></div>
-        <div id="heroCard" class="card" style="padding:1rem">
+        <div id="heroCard" class="card" style="padding:1rem;will-change:transform;transform:translateZ(0)">
           <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop"
                srcset="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=800&auto=format&fit=crop 800w, https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1200&auto=format&fit=crop 1200w"
-               sizes="(max-width:900px) 90vw, 42vw"
-               alt="جرثقیل ساختمانی - بازرسی" style="border-radius:.8rem" fetchpriority="high" decoding="async" />
+               sizes="(max-width:900px) 90vw, 42vw" alt="جرثقیل ساختمانی - بازرسی" style="border-radius:.8rem" fetchpriority="high" decoding="async" />
           <div style="display:flex;gap:.6rem;margin-top:.8rem;align-items:center">
             <div class="badge" style="background:#ECFDF5;color:#065F46">گواهی معتبر</div>
             <div class="badge">هماهنگی سریع</div>
@@ -216,131 +181,278 @@
     </div>
   </section>
 
-  <!-- Apple-like sticky showcase -->
+  <!-- Sticky showcase -->
   <section id="showcase" class="showcase">
     <div class="container">
-      <div class="section-title"><h2>نمایش خدمات روی تجهیز</h2></div>
+      <div class="section-title" data-reveal><h2>نمایش خدمات روی تجهیز</h2></div>
       <div class="sticky-wrap">
         <div class="sticky-media">
           <div class="stack card">
-            <img id="shot-1" class="active" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop" alt="جرثقیل"/>
-            <img id="shot-2" src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?q=80&w=1400&auto=format&fit=crop" alt="بویلر و پایپینگ"/>
-            <img id="shot-3" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop" alt="تست بار"/>
+            <img id="shot-1" class="active" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop" alt="تاورکرین"/>
+            <img id="shot-2" src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?q=80&w=1400&auto=format&fit=crop" alt="دیگ بخار و پایپینگ"/>
+            <img id="shot-3" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop" alt="جرثقیل کامیونی"/>
           </div>
         </div>
         <div class="show-steps">
-          <div class="show-step" data-shot="1" data-reveal>
-            <h3>بازرسی انواع جرثقیل</h3>
-            <p class="muted">کامیونی/تاوری/سقفی — دوره‌ای، نصب و کارکردی.</p>
-          </div>
-          <div class="show-step" data-shot="2" data-reveal>
-            <h3>دیگ بخار و مخازن تحت فشار</h3>
-            <p class="muted">بازرسی فنی، هیدرواستاتیک و NDT — گواهی معتبر.</p>
-          </div>
-          <div class="show-step" data-shot="3" data-reveal>
-            <h3>تست بار و ایمنی لیفتینگ</h3>
-            <p class="muted">Load Test ایمن با تجهیزات کالیبره و گزارش مستند.</p>
-          </div>
+          <div class="show-step" data-shot="1" data-reveal><h3>بازرسی انواع جرثقیل</h3><p class="muted">کامیونی/تاوری/سقفی — دوره‌ای، نصب و کارکردی.</p></div>
+          <div class="show-step" data-shot="2" data-reveal><h3>دیگ بخار و مخازن تحت فشار</h3><p class="muted">بازرسی فنی، هیدرواستاتیک و NDT — گواهی معتبر.</p></div>
+          <div class="show-step" data-shot="3" data-reveal><h3>تست بار و ایمنی لیفتینگ</h3><p class="muted">Load Test ایمن با تجهیزات کالیبره و گزارش مستند.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services (accordion) -->
+  <!-- Services -->
   <section id="services">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-reveal>
         <h2>خدمات Prime Inspect</h2>
         <a class="btn btn-outline" href="#request">استعلام و رزرو</a>
       </div>
       <div class="grid grid-4">
-        <!-- هر acc-head الان با کیبورد هم باز/بسته می‌شود -->
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏗️</div><h3>جرثقیل کامیونی/بوم تلسکوپی</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">بازرسی دوره‌ای، کارکردی، چک‌لیست کامل + تست بار (درصورت نیاز).</p></div>
-          </div>
-        </div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏗️</div><h3>جرثقیل کامیونی/بوم تلسکوپی</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">بازرسی دوره‌ای، کارکردی، چک‌لیست کامل + تست بار (درصورت نیاز).</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏢</div><h3>تاورکرین</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">نصب/راه‌اندازی، بازرسی دوره‌ای، کنترل سیستم‌های ایمنی.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏭</div><h3>جرثقیل سقفی/دروازه‌ای</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">سازه/ریل/ترولی/قلاب، مدارها و سوئیچ‌های حدی.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🧪</div><h3>تست بار (Load Test)</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">اجرای تست بار ایمن با تجهیزات کالیبره و گزارش مستند.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🔥</div><h3>دیگ بخار و مخازن تحت فشار</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">بازرسی فنی/ایمنی، هیدرواستاتیک و صدور گواهی.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">💧</div><h3>تست هیدرواستاتیک</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">پروتکل فشار/زمان، ثبت داده‌ها و تحلیل.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🔍</div><h3>NDT (UT/MT/PT/...)</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">آزمون‌های غیرمخرب و گزارش دقیق عیوب.</p></div></div></div>
+        <div class="service" data-reveal><div class="acc"><div class="acc-head" role="button" tabindex="0" aria-expanded="false"><div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🎓</div><h3>آموزش ایمنی با گواهینامه</h3></div><div class="acc-arrow">⌄</div></div><div class="acc-panel"><p class="muted">کلاس حضوری یک‌روزه — رشت، شهرک صنعتی سپیدرود، کارخانه بهین‌تحلیلگر.</p></div></div></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏢</div><h3>تاورکرین</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">نصب/راه‌اندازی، بازرسی دوره‌ای، کنترل سیستم‌های ایمنی.</p></div>
-          </div>
-        </div>
+  <!-- Gallery: جرثقیل + بازرس -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <h2>گالری بازرسی</h2>
+        <span class="muted" style="font-size:.9rem;color:#CBD5E1">تصاویر مرجع از Unsplash — قابل جایگزینی با عکس‌های پروژه‌های خودتان</span>
+      </div>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop" alt="تاورکرین" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop" alt="جرثقیل کامیونی" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1519455953755-af066f52f1ea?q=80&w=800&auto=format&fit=crop" alt="جرثقیل سقفی" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?q=80&w=800&auto=format&fit=crop" alt="بویلر/پایپینگ" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800&auto=format&fit=crop" alt="بازرس ایمنی با PPE" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="چک‌لیست ایمنی" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=800&auto=format&fit=crop" alt="اتاق تجهیزات/پمپ‌ها" loading="lazy" decoding="async" data-reveal>
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" alt="محوطه صنعتی" loading="lazy" decoding="async" data-reveal>
+      </div>
+      <div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+        <button class="close" id="lbClose" aria-label="بستن">✕</button>
+        <img alt="نمایش تصویر بزرگ" />
+      </div>
+    </div>
+  </section>
 
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🏭</div><h3>جرثقیل سقفی/دروازه‌ای</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">سازه/ریل/ترولی/قلاب، مدارها و سوئیچ‌های حدی.</p></div>
-          </div>
-        </div>
+  <!-- Why us -->
+  <section id="why" class="why">
+    <div class="container">
+      <div class="section-title" data-reveal><h2>چرا Prime Inspect؟</h2></div>
+      <div class="grid grid-3">
+        <div class="item" data-reveal><div class="ic">🎯</div><div><h3>دقت و اعتبار</h3><p class="muted">بازرسی مستند مطابق استانداردهای مرتبط.</p></div></div>
+        <div class="item" data-reveal><div class="ic">⚡</div><div><h3>سرعت در بازرسی و صدور</h3><p class="muted">هماهنگی سریع، تحویل به‌موقع گزارش و گواهی.</p></div></div>
+        <div class="item" data-reveal><div class="ic">💸</div><div><h3>تعرفه رقابتی</h3><p class="muted">بهترین نسبت کیفیت به قیمت با شفافیت کامل.</p></div></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🧪</div><h3>تست بار (Load Test)</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">اجرای تست بار ایمن با تجهیزات کالیبره و گزارش مستند.</p></div>
-          </div>
-        </div>
+  <!-- Process -->
+  <section id="process">
+    <div class="container">
+      <div class="section-title" data-reveal><h2>فرآیند همکاری</h2></div>
+      <div class="steps">
+        <div class="card step" data-reveal><div class="num">۱</div><h3>ثبت درخواست</h3><p class="muted">فرم زیر را پر کنید یا تماس بگیرید.</p></div>
+        <div class="card step" data-reveal><div class="num">۲</div><h3>هماهنگی زمان/مدارک</h3><p class="muted">کارشناس ما تماس می‌گیرد و مدارک لازم را اعلام می‌کند.</p></div>
+        <div class="card step" data-reveal><div class="num">۳</div><h3>بازرسی میدانی</h3><p class="muted">اجرای بازرسی، تست‌ها و ثبت نتایج.</p></div>
+        <div class="card step" data-reveal><div class="num">۴</div><h3>گزارش + گواهی</h3><p class="muted">تحویل گزارش کامل و صدور گواهی معتبر.</p></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🔥</div><h3>دیگ بخار و مخازن تحت فشار</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">بازرسی فنی/ایمنی، هیدرواستاتیک و صدور گواهی.</p></div>
+  <!-- Request form -->
+  <section id="request">
+    <div class="container">
+      <div class="section-title" data-reveal>
+        <h2>ثبت درخواست بازرسی</h2>
+        <div class="muted" style="color:#CBD5E1">پاسخگویی 24/7 — تماس: <a href="tel:+989219692100">0921 969 2100</a></div>
+      </div>
+      <div class="form-wrap">
+        <form id="inspectForm" data-reveal>
+          <div style="display:grid;gap:.8rem;grid-template-columns:1fr 1fr">
+            <div><label>نام شرکت/شخص</label><input name="company" required></div>
+            <div><label>نام و نام خانوادگی مسئول</label><input name="contact" required></div>
           </div>
-        </div>
+          <div style="display:grid;gap:.8rem;grid-template-columns:1fr 1fr">
+            <div><label>موبایل</label><input name="phone" required></div>
+            <div><label>ایمیل</label><input type="email" name="email" placeholder="navid84po@gmail.com"></div>
+          </div>
+          <div style="display:grid;gap:.8rem;grid-template-columns:1fr 1fr">
+            <div><label>استان / شهر</label><input name="city" required></div>
+            <div><label>آدرس سایت پروژه</label><input name="address"></div>
+          </div>
+          <div style="display:grid;gap:.8rem;grid-template-columns:1fr 1fr">
+            <div>
+              <label>نوع تجهیز</label>
+              <select name="equipment" required>
+                <option value="">انتخاب کنید</option>
+                <option>جرثقیل کامیونی/بوم تلسکوپی</option>
+                <option>تاورکرین</option>
+                <option>جرثقیل سقفی/دروازه‌ای</option>
+                <option>دیگ بخار</option>
+                <option>مخزن تحت فشار</option>
+                <option>لیفتراک/تجهیزات جابجایی</option>
+                <option>سایر</option>
+              </select>
+            </div>
+            <div>
+              <label>سرویس موردنیاز</label>
+              <select name="service" required>
+                <option value="">انتخاب کنید</option>
+                <option>بازرسی دوره‌ای</option>
+                <option>بازرسی اولیه/نصب</option>
+                <option>تست بار (Load Test)</option>
+                <option>NDT (UT/MT/PT/...)</option>
+                <option>تست هیدرواستاتیک</option>
+                <option>آموزش ایمنی با گواهینامه</option>
+                <option>مشاوره/سایر</option>
+              </select>
+            </div>
+          </div>
+          <div><label>توضیحات تکمیلی</label><textarea name="notes" rows="4"></textarea></div>
+          <div class="note">فعلاً فرم نمایشی است. برای هماهنگی سریع از تماس/واتساپ استفاده کنید.</div>
+          <div id="success" class="success">درخواست شما ثبت شد. به‌زودی تماس می‌گیریم.</div>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+            <button type="submit" class="btn btn-primary">ثبت درخواست</button>
+            <a class="btn btn-outline" href="https://wa.me/989219692100?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3%DB%8C%20%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%20%D8%AF%D8%A7%D8%B1%D9%85." target="_blank" rel="noopener">واتساپ</a>
+          </div>
+        </form>
 
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">💧</div><h3>تست هیدرواستاتیک</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">پروتکل فشار/زمان، ثبت داده‌ها و تحلیل.</p></div>
-          </div>
-        </div>
-
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🔍</div><h3>NDT (UT/MT/PT/...)</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">آزمون‌های غیرمخرب و گزارش دقیق عیوب.</p></div>
-          </div>
-        </div>
-
-        <div class="service" data-reveal>
-          <div class="acc">
-            <div class="acc-head" role="button" tabindex="0" aria-expanded="false">
-              <div style="display:flex;align-items:center;gap:.7rem"><div class="ic">🎓</div><h3>آموزش ایمنی با گواهینامه</h3></div>
-              <div class="acc-arrow">⌄</div>
-            </div>
-            <div class="acc-panel"><p class="muted">کلاس حضوری یک‌روزه — رشت، شهرک صنعتی سپیدرود، کارخانه بهین‌تحلیلگر.</p></div>
-          </div>
+        <div class="card" style="padding:1rem" data-reveal>
+          <h3 style="margin-top:0">راه‌های ارتباطی</h3>
+          <p class="muted">پاسخگویی 24/7 (آن‌کال)</p>
+          <ul style="list-style:none;padding:0;margin:1rem 0;display:grid;gap:.6rem">
+            <li>📞 تلفن/واتساپ: <a href="tel:+989219692100">0921 969 2100</a></li>
+            <li>✉️ ایمیل: <a href="mailto:navid84po@gmail.com">navid84po@gmail.com</a></li>
+            <li>📸 اینستاگرام: <a href="https://instagram.com/primeinspect.ir" target="_blank" rel="noopener">@primeinspect.ir</a></li>
+          </ul>
+          <div class="badge">پوشش سراسری ایران</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <div class="container">
-      <div class="section-title">
-        <h2>گالری بازرسی</h2>
-        <span class="muted" style="font-size:.9rem">تصاویر مرجع از Unsplash (نمایشی) — پیشنهاد: بعداً با عکس‌های واقعی 
+  <!-- Footer -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem">
+          <svg viewBox="0 0 48 48" width="36" height="36" fill="none" aria-hidden="true">
+            <path d="M24 4l14 6v9c0 10.5-6.5 20-14 23-7.5-3-14-12.5-14-23V10l14-6z" stroke="#93C5FD" stroke-width="2" fill="rgba(147,197,253,.1)"/>
+            <path d="M17 24l5 5 9-10" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="brand-title"><div class="en" style="font-weight:800">Prime Inspect</div><div class="sub">by EuroBoiler</div></div>
+        </div>
+        <p style="color:#CBD5E1">دقیق، سریع، به‌صرفه — بازرسی جرثقیل، دیگ بخار و تجهیزات تحت فشار.</p>
+      </div>
+      <div>
+        <h4 style="margin-top:0;color:#E5E7EB">دسترسی سریع</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:.4rem">
+          <li><a href="#services">خدمات</a></li>
+          <li><a href="#showcase">نمونه</a></li>
+          <li><a href="#gallery">گالری</a></li>
+          <li><a href="#request">درخواست بازرسی</a></li>
+          <li><a href="#faq">سوالات</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-top:0;color:#E5E7EB">ارتباط</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:.4rem">
+          <li><a href="tel:+989219692100">0921 969 2100</a></li>
+          <li><a href="mailto:navid84po@gmail.com">navid84po@gmail.com</a></li>
+          <li><a href="https://instagram.com/primeinspect.ir" target="_blank" rel="noopener">@primeinspect.ir</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container subfoot">
+      <div>© <span id="yr"></span> Prime Inspect — by EuroBoiler</div>
+    </div>
+  </footer>
+
+  <!-- Floating -->
+  <div class="floating" aria-label="quick">
+    <a class="fab whatsapp" href="https://wa.me/989219692100?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AF%D8%B1%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%20%D8%A8%D8%A7%D8%B2%D8%B1%D8%B3%DB%8C%20%D8%AF%D8%A7%D8%B1%D9%85." target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.62-6.003C.122 5.281 5.403 0 12.057 0 18.71 0 23.99 5.281 23.99 11.834c0 6.552-5.281 11.833-11.934 11.833a11.95 11.95 0 01-6.003-1.62L.057 24z"/></svg>
+    </a>
+    <a class="fab phone" href="tel:+989219692100" aria-label="تماس">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.54a1 1 0 01-1 1C10.52 22.06 1.94 13.48 1.94 2.98a1 1 0 011-1H6.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57a1 1 0 01-.24 1.02l-2.21 2.22z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    // سال
+    const yrEl=document.getElementById('yr'); if(yrEl) yrEl.textContent=new Date().getFullYear();
+
+    // ریویل نرم + استگر
+    const revEls=document.querySelectorAll('[data-reveal], .stagger');
+    const io=new IntersectionObserver((ents)=>{ents.forEach((en)=>{if(en.isIntersecting){requestAnimationFrame(()=>en.target.classList.add('in')); io.unobserve(en.target);}})},{rootMargin:'0px 0px -12%', threshold:.12});
+    revEls.forEach(el=>io.observe(el));
+
+    // هدر کوچک‌شونده
+    (function(){const hdr=document.getElementById('hdr'); const onScroll=()=>{(window.scrollY>10)?hdr.classList.add('shrink'):hdr.classList.remove('shrink')}; onScroll(); window.addEventListener('scroll',onScroll,{passive:true});})();
+
+    // آکاردئون‌ها (کلیک و کیبورد)
+    document.querySelectorAll('.acc').forEach(acc=>{
+      const head=acc.querySelector('.acc-head'); const panel=acc.querySelector('.acc-panel');
+      const toggle=()=>{const open=acc.classList.toggle('open'); panel.style.maxHeight=open?(panel.scrollHeight+'px'):0; head.setAttribute('aria-expanded',open?'true':'false');};
+      head.addEventListener('click',toggle);
+      head.addEventListener('keydown',(e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); }});
+    });
+
+    // لایت‌باکس + ESC
+    const lb=document.getElementById('lb'); const lbImg=lb?.querySelector('img'); const lbClose=document.getElementById('lbClose');
+    document.querySelectorAll('#gallery img').forEach(img=>{img.addEventListener('click',()=>{ if(lb&&lbImg){ lbImg.src=img.src; lb.classList.add('open'); }});});
+    lbClose?.addEventListener('click',()=> lb.classList.remove('open'));
+    lb?.addEventListener('click',(e)=>{ if(e.target===lb) lb.classList.remove('open'); });
+    document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') lb?.classList.remove('open'); });
+
+    // تیلت + پارالاکس هیرو (نرم)
+    (function(){
+      const card=document.getElementById('heroCard'); if(!card) return;
+      let t={rx:0,ry:0,off:0}, c={rx:0,ry:0,off:0}; const lerp=(a,b,s)=>a+(b-a)*s;
+      card.addEventListener('mousemove',(e)=>{const r=card.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width, y=(e.clientY-r.top)/r.height; t.rx=(y-.5)*6; t.ry=(.5-x)*8;});
+      card.addEventListener('mouseleave',()=>{t.rx=0; t.ry=0;});
+      window.addEventListener('scroll',()=>{t.off=Math.min((window.scrollY||0)*0.06,30);},{passive:true});
+      (function tick(){ c.rx=lerp(c.rx,t.rx,.12); c.ry=lerp(c.ry,t.ry,.12); c.off=lerp(c.off,t.off,.08);
+        card.style.transform=`perspective(900px) rotateX(${c.rx}deg) rotateY(${c.ry}deg) translateY(${c.off}px)`; requestAnimationFrame(tick); })();
+    })();
+
+    // شوکیس چسبان: همگام‌سازی استپ‌ها با تصاویر
+    (function(){
+      const steps=document.querySelectorAll('.show-step');
+      const shots={1:document.getElementById('shot-1'),2:document.getElementById('shot-2'),3:document.getElementById('shot-3')};
+      const so=new IntersectionObserver((entries)=>{entries.forEach(en=>{if(en.isIntersecting){
+        steps.forEach(s=>s.classList.remove('active')); en.target.classList.add('active');
+        const id=en.target.getAttribute('data-shot'); Object.values(shots).forEach(i=>i&&i.classList.remove('active')); shots[id]?.classList.add('active');
+      }});},{threshold:.6});
+      steps.forEach(s=>so.observe(s));
+    })();
+
+    // اسکرول نرم بین سکشن‌ها
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',(e)=>{
+        const id=a.getAttribute('href'); const el=document.querySelector(id);
+        if(!el) return; e.preventDefault();
+        if(document.startViewTransition){document.startViewTransition(()=>el.scrollIntoView({behavior:'smooth',block:'start'}));}
+        else{el.scrollIntoView({behavior:'smooth',block:'start'});}
+      });
+    });
+  </script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Prime Inspect — by EuroBoiler","url":"https://navid84po.github.io/primeinspect/","description":"بازرسی جرثقیل، دیگ بخار و تجهیزات تحت فشار — دقیق، سریع، به‌صرفه.","contactPoint":[{"@type":"ContactPoint","telephone":"+98-921-969-2100","contactType":"customer service","areaServed":"IR","availableLanguage":["fa","en"]}]}
+  </script>
+</body>
+</html>
