@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://navid84po.github.io/primeinspect/sitemap.xml
